@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <style>
+.project-details-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-section {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.project-content {
+  display: flex;
+  gap: 20px;
+}
+
+.project-image {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Ajustez la taille selon votre image */
+  height: 400px;
+}
+
+.project-info {
+  width: 55%;
+}
+
+.project-info h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-info ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.project-info ul li::before {
+  content: "✅ ";
+  color: green;
+  font-weight: bold;
+}
+
+.explain_project{
+padding: 20px 20px;
+font-size: 25;
+font-family: sans-serif;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.explain_project p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .project-section {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+ </style>
+<div class="project-details-container">
+  <div class="project-title">
+    <h1 style="text-align: center; font-style: italic; font-weight: bolder;">
+      🎉 Application Événementielle 🎉
+    </h1>
+  </div>
+  <div class="explain_project">
+    Cette plateforme innovante de gestion d'événements a été développée dans le cadre de ma quête d’apprentissage de Flutter et de mon exploration approfondie de Python, notamment avec son framework Django, dans le but de monter en compétences en tant que développeur full-stack. Le projet vise à transformer la manière dont les événements sont organisés et vécus en Côte d’Ivoire.
+
+    Composée de deux applications mobiles – l’une pour les organisateurs et l’autre pour les clients – elle simplifie la création, la promotion et la participation aux événements. Grâce à des fonctionnalités telles que l'achat sécurisé de billets, les statistiques en temps réel, et la dématérialisation des tickets via QR codes, elle propose une solution technique robuste et adaptée aux réalités locales.
+    
+    L’enjeu principal est de répondre aux défis spécifiques du marché ivoirien : automatiser les processus, réduire les coûts opérationnels, et démocratiser l’accès aux événements culturels et économiques. Ce projet reflète ma capacité à intégrer des outils modernes comme Flutter, Django, PostgreSQL et AWS pour concevoir une solution fonctionnelle et innovante, tout en contribuant à l’enrichissement des cultures locales.
+  </div>
+
+  <!-- Section pour la version organisateur -->
+  <div class="project-section">
+    <div class="project-content">
+      <img
+        src="./assets/eventapp.jpeg"
+        alt="Version Organisateur"
+        class="project-image"
+      />
+      <div class="project-info">
+        <h2 style="font-weight: bold;">Version Organisateur</h2>
+        <p style="font-size: 1rem; font-weight: 500;">
+          La version organisateur est conçue pour permettre aux créateurs 
+          d'événements de gérer efficacement leurs activités, 
+          allant de la création d'événements à la visualisation des statistiques.
+        </p>
+        <h3 style="font-weight: bold;">Fonctionnalités :</h3>
+        <ul>
+          <li>🔧 Création et modification des événements.</li>
+          <li>📊 Statistiques détaillées sur les tickets vendus et les commentaires.</li>
+          <li>📤 Gestion des tickets et des utilisateurs.</li>
+          <li>🔍 Visualisation des données en temps réel.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section pour la version cliente -->
+  <div class="project-section">
+    <div class="project-content">
+      <img
+        src="./assets/WhatsApp Image 2024-11-21 at 11.39.40.jpeg"
+        alt="Version Client"
+        class="project-image"
+      />
+      <div class="project-info">
+        <h2 style="font-weight: bold;">Version Client</h2>
+        <p style="font-size: 1rem; font-weight: 500;">
+          La version client permet aux utilisateurs de découvrir et de participer à 
+          des événements tout en offrant une expérience fluide et intuitive.
+        </p>
+        <h3 style="font-weight: bold;">Fonctionnalités :</h3>
+        <ul>
+          <li>🎫 Achat de tickets en ligne.</li>
+          <li>⭐ Mise en favoris des événements préférés.</li>
+          <li>💬 Ajout de commentaires et notes.</li>
+          <li>🔍 Recherche avancée d'événements par catégorie ou localisation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

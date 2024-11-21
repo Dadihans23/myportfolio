@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Styles généraux */
+body {
+  font-family:  sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Conteneur principal du projet */
+.project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Conteneur du projet avec image et texte */
+.project-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Image à gauche */
+.project-image img {
+  width: 400px; /* Ajustez la taille selon votre image */
+  height: 600px;
+  border-radius: 8px;
+}
+
+/* Détails du projet à droite */
+.project-details {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.project-features {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.project-features li {
+  margin-bottom: 8px;
+}
+
+    </style>
+
+  <section class="project-section">
+    <!-- Conteneur du projet -->
+    <div class="project-container">
+      <!-- Image à gauche -->
+      <div class="project-image">
+        <img src="assets/pong.jpeg" alt="Pong Game Screenshot">
+      </div>
+
+      <!-- Description et fonctionnalités à droite -->
+      <div class="project-details">
+        <h1 class="project-title">🎮Pong Game📱</h1>
+        <p class="project-description">
+          Le projet "Pong Game" est né de ma curiosité pour la sensation des jeux de rallye qui utilisent l'inclinaison du téléphone pour contrôler les mouvements. Plutôt que de créer un jeu de rallye classique, j'ai voulu explorer la façon dont cette technologie pouvait être utilisée dans un jeu rétro comme Pong. 
+          Ce projet est donc une réinterprétation moderne de Pong, où la fluidité et la jouabilité sont améliorées, et l'interaction est rendue plus immersive grâce à l'utilisation de l'accéléromètre du téléphone. L'objectif était d'explorer les limites de cette technologie tout en créant une expérience ludique pour les joueurs.
+        </p>
+
+        <h2>🚀 Fonctionnalités :</h2>
+        <ul class="project-features">
+            <li>Jouer à deux avec la possibilité de se connecter en réseau local.</li>
+            <li>Contrôle du paddle via l'inclinaison du téléphone (accéléromètre).</li>
+            <li>Score en temps réel avec un système de victoire à 5 points.</li>
+            <li>Graphismes simples et fluides pour une expérience agréable.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
